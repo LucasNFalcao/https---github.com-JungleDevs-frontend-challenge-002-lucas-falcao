@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Challenge 02</title>
+</head>
+
+
+<body>
+    <header class="headerOfShoppingList">
+        <h1 class="titleOfHeader">
+            Shopping list
+            <button onclick="openAddItem()" class="createNewItem"
+                aria-label="Click to open the form to add item on Shopping list">
+                <i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i>
+            </button>
+        </h1>
+        <input class="searchItems" type="text" placeholder="Search your items" name="searchItem" />
+    </header>
+
+    <main class="mainShoppingList">
+        <section class="newItemForAdd">
+            <div class="titleNewItem">
+                <h2 class="textNewItem">New Item</h2>
+                <button class="closeAddItem" onclick="closeAddItem()"
+                    aria-label="Close form to add item on Shopping list">
+                    <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <div class="allFormsAddItem">
+                <form class="formAddItem" action=".">
+                    <label for="name">
+                        <h3 class="textInputItem">Name</h3>
+                    </label>
+                    <input class="inputItem" type="text" placeholder="e.g.: Banana, Apple">
+                </form>
+                <form class="formAddItem formAddMarginLeft" action=".">
+                    <label for="quantity">
+                        <h3 class="textInputItem">Quantity</h3>
+                    </label>
+                    <input class="inputItem" type="text" placeholder="e.g.: 1 un, 12 un">
+                </form>
+                <form class="formAddItem formAddMarginLeft" action=".">
+                    <label for="price">
+                        <h3 class="textInputItem">Price</h3>
+                    </label>
+                    <input class="inputItem" type="text" placeholder="e.g.: $4.00, $10.99">
+                </form>
+
+                <button class="buttonAddItem formAddMarginLeft">
+                    <span class="spanAddItem" aria-label="Close form to add item on Shopping list">
+                        <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
+                        <h3>add item</h3>
+                    </span>
+                </button>
+            </div>
+        </section>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <button class="buttonHeaderTable"> ITEM
+                            <span class="spanAngleUpDown">
+                                <i class="fa fa-angle-up" aria-hidden="true"></i>
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </span>
+                        </button>
+                    </th>
+                    <th>
+                        <button class="buttonHeaderTable"> PRICE
+                            <span class="spanAngleUpDown">
+                                <i class="fa fa-angle-up" aria-hidden="true"></i>
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </span>
+                        </button>
+                    </th>
+                    <th>QUANTITY</th>
+                    <th>TOTAL</th>
+                </tr>
+            </thead>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+    </main>
+
+    <footer class="footerOfShoppingList">
+        <h1 class="textTotal">TOTAL: <span class="totalSum">$0.00</span> </h1>
+        <button class="buttonCheckout">
+            <h3>Checkout</h3>
+        </button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
