@@ -1,10 +1,3 @@
-
-
-const totalSum = document.querySelector(".totalSum");
-totalSum.textContent = calculateTotal().toString();
-
-
-
 /* Object and Functions of the program */
 
 let item = class{
@@ -34,8 +27,4 @@ function closeAddItem() {
     const newItemForAdd = document.querySelector(".newItemForAdd");
     if(newItemForAdd.style.display != 'none');
     newItemForAdd.style.display = 'none';
-}
-
-let calculateTotal = () => {
-    return 0;
 }

@@ -26,7 +26,6 @@
 
 }
 
-/* Input of search items*/
 .searchItems{
     width: 472px;
     height: 40px;
@@ -34,8 +33,8 @@
     border-radius: 80px;
 }
 
-/* Main content */
 
+/* Main content */
 .mainShoppingList{
     position: relative;
     top: 120px;
@@ -138,10 +137,6 @@
     padding: 0px 120px;
 }
 
-
-
-
-/* Button to click and checkout*/
 .buttonCheckout{
     width: 144px;
     height: 38px;
